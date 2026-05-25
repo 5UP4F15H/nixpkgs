@@ -39,7 +39,7 @@ buildPythonPackage (finalAttrs: {
 
   meta = {
     changelog = "https://github.com/tusharsadhwani/pytokens/blob/${finalAttrs.src.tag}/CHANGELOG.md";
-    description = "A fast, spec compliant Python 3.14+ tokenizer that runs on older Pythons";
+    description = "Fast, spec compliant Python 3.14+ tokenizer that runs on older Pythons";
     homepage = "https://github.com/tusharsadhwani/pytokens";
     license = lib.licenses.mit;
     maintainers = with lib.maintainers; [ hexa ];
