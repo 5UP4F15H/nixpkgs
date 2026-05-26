@@ -765,7 +765,9 @@ let
     ];
     RGtk2 = [ pkgs.gtk2.dev ];
     rhdf5 = [ pkgs.zlib ];
-    Rhdf5lib = with pkgs; [ zlib.dev ];
+    Rhdf5lib = with pkgs; [
+      cmake
+    ];
     Rhpc = with pkgs; [
       zlib
       bzip2.dev
@@ -1251,6 +1253,10 @@ let
     cartogramR = with pkgs; [
       fftw.dev
       pkg-config
+    ];
+    Rhdf5lib = with pkgs; [
+      curl
+      zlib.dev
     ];
     GRAB = [ pkgs.zlib.dev ];
     jqr = [ pkgs.jq.out ];
